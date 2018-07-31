@@ -1,0 +1,3400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E340BC63-3FA8-45DC-8F47-A3D6BE4AF3AB}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>image004.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>TALLY_SZHL</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>TALLY</RootNamespace>
+    <StartupObject>TALLY.FrmLogin</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>ftp://10.122.9.1/Update/Tally_SZH/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://10.122.9.1/Update/TALLY_SZH/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TALLY_SZHL.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TALLY_SZHL.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5887783EC126698E5389CAC721A97178F82CAAD7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Tally_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <Name>Accessibility</Name>
+    </Reference>
+    <Reference Include="ADODB">
+      <Name>adodb</Name>
+      <HintPath>..\..\..\..\Program Files\Microsoft.NET\Primary Interop Assemblies\adodb.dll</HintPath>
+      <AssemblyFolderKey>hklm\primary interop assemblies</AssemblyFolderKey>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="C1.Common">
+      <Name>C1.Common</Name>
+      <HintPath>..\..\..\..\Program Files\ComponentOne Studio.NET\bin\C1.Common.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\c1studio</AssemblyFolderKey>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="C1.Win.C1Spell">
+      <Name>C1.Win.C1Spell</Name>
+      <HintPath>..\..\..\..\Program Files\ComponentOne Studio.NET\bin\C1.Win.C1Spell.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\c1studio</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="C1.Win.C1Thesaurus">
+      <Name>C1.Win.C1Thesaurus</Name>
+      <HintPath>..\..\..\..\Program Files\ComponentOne Studio.NET\bin\C1.Win.C1Thesaurus.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\c1studio</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="C1.Win.C1TrueDBGrid">
+      <Name>C1.Win.C1TrueDBGrid</Name>
+      <HintPath>..\..\..\..\Program Files\ComponentOne Studio.NET\bin\C1.Win.C1TrueDBGrid.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\c1studio</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="C1CommandConverter">
+      <Name>C1CommandConverter</Name>
+      <HintPath>..\..\..\..\Program Files\ComponentOne Studio.NET\bin\C1CommandConverter.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\c1studio</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="cscompmgd">
+      <Name>cscompmgd</Name>
+    </Reference>
+    <Reference Include="CustomMarshalers">
+      <Name>CustomMarshalers</Name>
+    </Reference>
+    <Reference Include="EnvDTE">
+      <Name>envdte</Name>
+    </Reference>
+    <Reference Include="Extensibility">
+      <Name>extensibility</Name>
+      <HintPath>..\..\..\..\Program Files\Microsoft Visual Studio .NET 2003\Common7\IDE\PublicAssemblies\extensibility.dll</HintPath>
+      <AssemblyFolderKey>hklm\publicassemblies</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="IEExecRemote">
+      <Name>IEExecRemote</Name>
+    </Reference>
+    <Reference Include="IEHost">
+      <Name>IEHost</Name>
+    </Reference>
+    <Reference Include="IIEHost">
+      <Name>IIEHost</Name>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ISymWrapper">
+      <Name>ISymWrapper</Name>
+    </Reference>
+    <Reference Include="MCppCodeDomParser">
+      <Name>MCppCodeDomParser</Name>
+      <HintPath>..\..\..\..\Program Files\Microsoft Visual Studio .NET 2003\Common7\IDE\PublicAssemblies\MCppCodeDomParser.dll</HintPath>
+      <AssemblyFolderKey>hklm\publicassemblies</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="Microsoft.JScript">
+      <Name>Microsoft.JScript</Name>
+    </Reference>
+    <Reference Include="Microsoft.mshtml">
+      <Name>Microsoft.mshtml</Name>
+      <HintPath>..\..\..\..\Program Files\Microsoft.NET\Primary Interop Assemblies\Microsoft.mshtml.dll</HintPath>
+      <AssemblyFolderKey>hklm\primary interop assemblies</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>dll\Microsoft.Vbe.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Name>Microsoft.VisualBasic.Compatibility</Name>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data">
+      <Name>Microsoft.VisualBasic.Compatibility.Data</Name>
+    </Reference>
+    <Reference Include="SMS_SZH, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\SMS_SZH.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="TallyInvoice, Version=1.0.4721.18987, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="TallyOther, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dll\C1.Common.dll" />
+    <Content Include="dll\Microsoft.Vbe.Interop.dll" />
+    <Content Include="dll\SMS_SZH.dll" />
+    <Content Include="dll\stdole.dll" />
+    <Content Include="dll\TallyOther.dll" />
+    <Content Include="image004.ico" />
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CODE_SYNC.Designer.vb">
+      <DependentUpon>CODE_SYNC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CODE_SYNC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBControl.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File_bak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABSENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABSENT_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABSENT_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABSENT_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABSENT_Print.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABSENT_Print_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABSENT_Print_Dial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABSENT_Print_Dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABSENT_Print_Dialog_tmp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABSENT_Print_Dial_tmp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABSENT_Print_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABSENT_Print_Edit_shift.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABSENT_Print_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABSENT_Print_tmp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABSENT_Print_tmp_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbsent_QBKQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABSENT_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAccountStat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttemper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttemper_ADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttemper_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttemper_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttemper_ManagerQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttemper_NewMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttemper_openform1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttemper_openform2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttemper_openform3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttemper_openform4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttemper_openform5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttemper_PG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttemper_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmattendancerecords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttendancerecords_ADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmATT_PERFORMANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmATT_PERFORMANCE_Dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBERTH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBerth_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBerth_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBerth_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBerth_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBILL_PERFORMANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBILL_PERFORMANCE_Dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBILL_RECEIVABLE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBILL_RECEIVABLE_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBILL_RECEIVABLE_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBILL_RECEIVABLE_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBILL_RECEIVABLE_Export.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBILL_RECEIVABLE_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoAgent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoAgent_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoAgent_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoAgent_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoAgent_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoDamaged.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoDamagedDegree.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoDamagedDegree_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoDamagedDegree_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoDamagedDegree_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoDamagedDegree_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoDamaged_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoDamaged_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoDamaged_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoDamaged_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoGoods.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoGoods_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoGoods_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoGoods_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoGoods_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackManage_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackManage_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackManage_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackManage_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackRecord_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackRecord_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackRecord_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackRecord_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackReport_Deal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackSheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackSheet_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackSheet_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackSheet_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackSheet_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackSheet_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackTest_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackTest_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoPackTest_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoWater.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoWaterReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoWaterReport_Deal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoWaterResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoWaterResult_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoWaterResult_Addog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoWaterResult_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoWaterResult_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoWaterResult_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoWater_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoWater_AddOg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoWater_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoWater_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoWater_Judge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoWater_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCARGO_APPEND_FEE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCARGO_CERTIFICATE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCARGO_CERTIFICATE_SUM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCARGO_CON_YEARTALLY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCARGO_CON_YEARTALLY_DO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_DAILY_REPORT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_DAILY_REPORT_DO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_DAILY_REPORT_OTHER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_DAILY_REPORT_QUERY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_DAILY_REPORT_QUERY_OTHER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_DAMAGED_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_DAMAGED_List_ADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_DAMAGED_List_DELETE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_DAMAGED_List_DO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_DAMAGED_List_EDIT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_DAMAGED_List_QUERY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_HATCHED.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_HATCHED_do.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_HATCH_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_hatch_list_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_hatch_list_delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_hatch_list_edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_hatch_list_GRID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_HATCH_LIST_new.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_hatch_list_new_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_hatch_list_new_delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_hatch_list_new_edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_hatch_list_new_query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_hatch_list_query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_hatch_sheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_hatch_sheet_define.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_hatch_sheet_doprint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_hatch_sheet_EDIT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_hatch_sheet_QUERY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_MARKS_ASSORTING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_MARKS_ASSORTING_ADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_MARKS_ASSORTING_DELETE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_MARKS_ASSORTING_DO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_MARKS_ASSORTING_EDIT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_MARKS_ASSORTING_QUERY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_MEASURE_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_MEASURE_LIST_ADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_MEASURE_LIST_DELETE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_MEASURE_LIST_EDIT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_MEASURE_LIST_QUERY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_Monitor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_Monitor_do.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCARGO_MONTH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCARGO_MONTH_DO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_onport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_SHORT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_SHORT_ADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_SHORT_DELETE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_SHORT_DO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_SHORT_EDIT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_SHORT_QUERY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCARGO_TALLY_CERTIFICATE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCARGO_TALLY_MREPORT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_verify.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_verify2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_verify3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_WAITFOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_WAITFOR_ADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_WAITFOR_DELETE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_WAITFOR_EDIT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCARGO_WAITFOR_QUERY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheck_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheck_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheck_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConImageCargo.Designer.vb">
+      <DependentUpon>FrmConImageCargo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConImageCargo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConRent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConRent_Deal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConSealExam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConSealExam_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConSealExam_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConSealExam_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConSealExam_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsign_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsign_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsign_edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsign_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContainerBillList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContainerCargoList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContainerSealExam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContainerSealExam_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContainerSealExam_Deal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContainerSealExam_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContainerSealExam_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContainerSealExam_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCon_Certificate_EDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCon_Onport.Designer.vb">
+      <DependentUpon>FrmCon_Onport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCon_Onport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCropEconomyStatistics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCropEconomyStatistics_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCropEconomyStatistics_Check.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCropEconomyStatistics_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCropEconomyStatistics_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDAMAGE_work.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDAMAGE_work_ADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDAMAGE_work_DELETE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDAMAGE_work_EDIT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDAMAGE_work_QUERY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartMent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartMent_ADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartMent_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartMent_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartMent_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDirector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDirector_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDirector_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDirector_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDirector_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDuty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDuty_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDuty_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDuty_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDuty_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEDIINI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmailName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmailName_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmailName_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmailName_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmailName_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFax.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFax_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFileView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFinishShipStatistics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFinishShipStatistics_Deal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFinishVesselStatistics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFinishVesselStatistics_Deal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGoodsType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGoodsType_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGoodsType_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGoodsType_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGoodsType_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGoodsYardInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGoodsYardInfo_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGoodsYardInfo_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGoodsYardInfo_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGoodsYardInfo_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGraph.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGraphtest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmINVOICE_MANAGE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmINVOICE_MANAGE_ADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmINVOICE_MANAGE_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmINVOICE_MANAGE_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmINVOICE_MANAGE_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManager_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManager_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManager_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNationality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNationality_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNationality_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNationality_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNationality_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNav.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmnewgoods.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmnewgoodstype.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmnewgoodstype_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmnewgoodstype_Del.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmnewgoodstype_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmnewgoods_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmnewgoods_Del.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmnewgoods_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOperationManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOperationManage_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPack.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPack_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPack_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPack_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPack_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPart_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPart_Del.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPart_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPart_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPAY_PERFORMANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPAY_PERFORMANCE_Dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPAY_PERFORMANCE_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPigeonhole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPigeonhole_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPort.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPort_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPort_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPort_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPort_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmport_unload .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportNew.Designer.vb">
+      <DependentUpon>FrmReportNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReport_cargo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReport_CON.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmREPORT_TALLY_FINANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmREPORT_TALLY_FINANCE_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmREPORT_TALLY_FINANCE_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmREPORT_TALLY_FINANCE_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmREPORT_TALLY_FINANCE_Print.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmREPORT_TALLY_QUALITY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmREPORT_TALLY_QUALITY_ADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmREPORT_TALLY_QUALITY_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmREPORT_TALLY_QUALITY_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmREPORT_TALLY_QUALITY_Print.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRs_Salary_In.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSealIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSealInspect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSealInspect_Check.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSealInspect_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSealIn_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSealIn_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSealIn_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSealIn_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSealKill.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSealKill_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSealKill_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSealOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSealOut_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSealOut_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSealOut_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSealOut_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSEAL_EXAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSEAL_EXAM_ADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSEAL_EXAM_DELETE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSEAL_EXAM_EDIT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSEAL_EXAM_QUERY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShipAgent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShipAgent_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShipAgent_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShipAgent_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShipAgent_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShipName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShipName_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShipName_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShipName_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShipName_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShipOwner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShipOwner_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShipOwner_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShipOwner_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShipOwner_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSort.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSpConLoadType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSpConPayType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSShip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSShip_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSShip_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSShip_Dept.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSShip_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSShip_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSTANDBY_PERFORMANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSTANDBY_PERFORMANCE_Dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTallyClerk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTallyClerk_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTallyClerk_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTallyClerk_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTallyClerk_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTallyType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTallyType_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTallyType_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTallyType_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTallyType_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTally_sheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTally_sheet_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTally_sheet_delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTally_sheet_edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTally_sheet_print.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTally_sheet_query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTally_Wage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTally_Wage_his.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransferYardCargo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransferYardCargo_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransferYardCargo_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransferYardCargo_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransferYardCargo_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransferYardCon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransferYardCon_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransferYardCon_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransferYardCon_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransferYardCon_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTypeShipRelation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTypeShipRelation_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTypeShipRelation_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTypeShipRelation_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTypeShipRelation_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpload.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUser_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUser_Del.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUser_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVessel_Papers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVessel_Papers_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVessel_Papers_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVessel_Papers_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVessel_Papers_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWorkBegin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWorkBegin_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWorkBegin_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWorkBegin_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWorkBegin_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWorkTime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWorkTime_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWorkType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWorkType_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWorkType_Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWorkType_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWorkType_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWORK_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWORK_RECORD_ADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWORK_RECORD_DELETE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWORK_RECORD_EDIT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWORK_RECORD_QUERY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWriteMailReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Bonus_New.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Bonus_New_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Bonus_New_Tax.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_file_no.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_His.Designer.vb">
+      <DependentUpon>Frm_His.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_His.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_refresh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ship_agent_sort.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_single_bay_movebox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_tally_fee_stat_month.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_tally_work_stat_month.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TallyINI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="CODE_SYNC.resx">
+      <DependentUpon>CODE_SYNC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="File_bak.resx">
+      <DependentUpon>File_bak.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABSENT.resx">
+      <DependentUpon>FrmABSENT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABSENT_Add.resx">
+      <DependentUpon>FrmABSENT_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABSENT_Delete.resx">
+      <DependentUpon>FrmABSENT_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABSENT_Edit.resx">
+      <DependentUpon>FrmABSENT_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABSENT_Print.resx">
+      <DependentUpon>FrmABSENT_Print.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABSENT_Print_Delete.resx">
+      <DependentUpon>FrmABSENT_Print_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABSENT_Print_Dial.resx">
+      <DependentUpon>FrmABSENT_Print_Dial.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABSENT_Print_Dialog.resx">
+      <DependentUpon>FrmABSENT_Print_Dialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABSENT_Print_Dialog_tmp.resx">
+      <DependentUpon>FrmABSENT_Print_Dialog_tmp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABSENT_Print_Dial_tmp.resx">
+      <DependentUpon>FrmABSENT_Print_Dial_tmp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABSENT_Print_Edit.resx">
+      <DependentUpon>FrmABSENT_Print_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABSENT_Print_Edit_shift.resx">
+      <DependentUpon>FrmABSENT_Print_Edit_shift.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABSENT_Print_Query.resx">
+      <DependentUpon>FrmABSENT_Print_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABSENT_Print_tmp.resx">
+      <DependentUpon>FrmABSENT_Print_tmp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABSENT_Print_tmp_Delete.resx">
+      <DependentUpon>FrmABSENT_Print_tmp_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAbsent_QBKQ.resx">
+      <DependentUpon>FrmAbsent_QBKQ.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmABSENT_Query.resx">
+      <DependentUpon>FrmABSENT_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAccountStat.resx">
+      <DependentUpon>FrmAccountStat.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttemper.resx">
+      <DependentUpon>FrmAttemper.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttemper_ADD.resx">
+      <DependentUpon>FrmAttemper_ADD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttemper_Delete.resx">
+      <DependentUpon>FrmAttemper_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttemper_Edit.resx">
+      <DependentUpon>FrmAttemper_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttemper_ManagerQuery.resx">
+      <DependentUpon>FrmAttemper_ManagerQuery.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttemper_NewMain.resx">
+      <DependentUpon>FrmAttemper_NewMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttemper_openform1.resx">
+      <DependentUpon>FrmAttemper_openform1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttemper_openform2.resx">
+      <DependentUpon>FrmAttemper_openform2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttemper_openform3.resx">
+      <DependentUpon>FrmAttemper_openform3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttemper_openform4.resx">
+      <DependentUpon>FrmAttemper_openform4.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttemper_openform5.resx">
+      <DependentUpon>FrmAttemper_openform5.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttemper_PG.resx">
+      <DependentUpon>FrmAttemper_PG.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttemper_Query.resx">
+      <DependentUpon>FrmAttemper_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmattendancerecords.resx">
+      <DependentUpon>Frmattendancerecords.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttendancerecords_ADD.resx">
+      <DependentUpon>FrmAttendancerecords_ADD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmATT_PERFORMANCE.resx">
+      <DependentUpon>FrmATT_PERFORMANCE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmATT_PERFORMANCE_Dialog.resx">
+      <DependentUpon>FrmATT_PERFORMANCE_Dialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBERTH.resx">
+      <DependentUpon>FrmBERTH.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBerth_Add.resx">
+      <DependentUpon>FrmBerth_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBerth_Delete.resx">
+      <DependentUpon>FrmBerth_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBerth_Edit.resx">
+      <DependentUpon>FrmBerth_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBerth_Query.resx">
+      <DependentUpon>FrmBerth_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBILL_PERFORMANCE.resx">
+      <DependentUpon>FrmBILL_PERFORMANCE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBILL_PERFORMANCE_Dialog.resx">
+      <DependentUpon>FrmBILL_PERFORMANCE_Dialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBILL_RECEIVABLE.resx">
+      <DependentUpon>FrmBILL_RECEIVABLE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBILL_RECEIVABLE_add.resx">
+      <DependentUpon>FrmBILL_RECEIVABLE_add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBILL_RECEIVABLE_Delete.resx">
+      <DependentUpon>FrmBILL_RECEIVABLE_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBILL_RECEIVABLE_Edit.resx">
+      <DependentUpon>FrmBILL_RECEIVABLE_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBILL_RECEIVABLE_Export.resx">
+      <DependentUpon>FrmBILL_RECEIVABLE_Export.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBILL_RECEIVABLE_Query.resx">
+      <DependentUpon>FrmBILL_RECEIVABLE_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo.resx">
+      <DependentUpon>FrmCargo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoAgent.resx">
+      <DependentUpon>FrmCargoAgent.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoAgent_Add.resx">
+      <DependentUpon>FrmCargoAgent_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoAgent_Delete.resx">
+      <DependentUpon>FrmCargoAgent_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoAgent_Edit.resx">
+      <DependentUpon>FrmCargoAgent_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoAgent_Query.resx">
+      <DependentUpon>FrmCargoAgent_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoDamaged.resx">
+      <DependentUpon>FrmCargoDamaged.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoDamagedDegree.resx">
+      <DependentUpon>FrmCargoDamagedDegree.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoDamagedDegree_Add.resx">
+      <DependentUpon>FrmCargoDamagedDegree_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoDamagedDegree_Delete.resx">
+      <DependentUpon>FrmCargoDamagedDegree_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoDamagedDegree_Edit.resx">
+      <DependentUpon>FrmCargoDamagedDegree_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoDamagedDegree_Query.resx">
+      <DependentUpon>FrmCargoDamagedDegree_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoDamaged_Add.resx">
+      <DependentUpon>FrmCargoDamaged_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoDamaged_Delete.resx">
+      <DependentUpon>FrmCargoDamaged_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoDamaged_Edit.resx">
+      <DependentUpon>FrmCargoDamaged_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoDamaged_Query.resx">
+      <DependentUpon>FrmCargoDamaged_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoGoods.resx">
+      <DependentUpon>FrmCargoGoods.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoGoods_Add.resx">
+      <DependentUpon>FrmCargoGoods_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoGoods_Delete.resx">
+      <DependentUpon>FrmCargoGoods_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoGoods_Edit.resx">
+      <DependentUpon>FrmCargoGoods_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoGoods_Query.resx">
+      <DependentUpon>FrmCargoGoods_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackManage.resx">
+      <DependentUpon>FrmCargoPackManage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackManage_Add.resx">
+      <DependentUpon>FrmCargoPackManage_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackManage_Delete.resx">
+      <DependentUpon>FrmCargoPackManage_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackManage_Edit.resx">
+      <DependentUpon>FrmCargoPackManage_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackManage_Query.resx">
+      <DependentUpon>FrmCargoPackManage_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackRecord.resx">
+      <DependentUpon>FrmCargoPackRecord.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackRecord_Add.resx">
+      <DependentUpon>FrmCargoPackRecord_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackRecord_Delete.resx">
+      <DependentUpon>FrmCargoPackRecord_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackRecord_Edit.resx">
+      <DependentUpon>FrmCargoPackRecord_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackRecord_Query.resx">
+      <DependentUpon>FrmCargoPackRecord_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackReport.resx">
+      <DependentUpon>FrmCargoPackReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackReport_Deal.resx">
+      <DependentUpon>FrmCargoPackReport_Deal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackSheet.resx">
+      <DependentUpon>FrmCargoPackSheet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackSheet_Add.resx">
+      <DependentUpon>FrmCargoPackSheet_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackSheet_Delete.resx">
+      <DependentUpon>FrmCargoPackSheet_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackSheet_Edit.resx">
+      <DependentUpon>FrmCargoPackSheet_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackSheet_Query.resx">
+      <DependentUpon>FrmCargoPackSheet_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackSheet_Report.resx">
+      <DependentUpon>FrmCargoPackSheet_Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackTest.resx">
+      <DependentUpon>FrmCargoPackTest.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackTest_Add.resx">
+      <DependentUpon>FrmCargoPackTest_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackTest_Delete.resx">
+      <DependentUpon>FrmCargoPackTest_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoPackTest_Edit.resx">
+      <DependentUpon>FrmCargoPackTest_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoWater.resx">
+      <DependentUpon>FrmCargoWater.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoWaterReport.resx">
+      <DependentUpon>FrmCargoWaterReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoWaterReport_Deal.resx">
+      <DependentUpon>FrmCargoWaterReport_Deal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoWaterResult.resx">
+      <DependentUpon>FrmCargoWaterResult.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoWaterResult_Add.resx">
+      <DependentUpon>FrmCargoWaterResult_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoWaterResult_Addog.resx">
+      <DependentUpon>FrmCargoWaterResult_Addog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoWaterResult_Delete.resx">
+      <DependentUpon>FrmCargoWaterResult_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoWaterResult_Edit.resx">
+      <DependentUpon>FrmCargoWaterResult_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoWaterResult_Query.resx">
+      <DependentUpon>FrmCargoWaterResult_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoWater_Add.resx">
+      <DependentUpon>FrmCargoWater_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoWater_AddOg.resx">
+      <DependentUpon>FrmCargoWater_AddOg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoWater_Delete.resx">
+      <DependentUpon>FrmCargoWater_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoWater_Edit.resx">
+      <DependentUpon>FrmCargoWater_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoWater_Judge.resx">
+      <DependentUpon>FrmCargoWater_Judge.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoWater_Query.resx">
+      <DependentUpon>FrmCargoWater_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_Add.resx">
+      <DependentUpon>FrmCargo_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCARGO_APPEND_FEE.resx">
+      <DependentUpon>FRMCARGO_APPEND_FEE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCARGO_CERTIFICATE.resx">
+      <DependentUpon>FRMCARGO_CERTIFICATE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCARGO_CERTIFICATE_SUM.resx">
+      <DependentUpon>FRMCARGO_CERTIFICATE_SUM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCARGO_CON_YEARTALLY.resx">
+      <DependentUpon>FRMCARGO_CON_YEARTALLY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCARGO_CON_YEARTALLY_DO.resx">
+      <DependentUpon>FRMCARGO_CON_YEARTALLY_DO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_DAILY_REPORT.resx">
+      <DependentUpon>FrmCARGO_DAILY_REPORT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_DAILY_REPORT_DO.resx">
+      <DependentUpon>FrmCARGO_DAILY_REPORT_DO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_DAILY_REPORT_OTHER.resx">
+      <DependentUpon>FrmCARGO_DAILY_REPORT_OTHER.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_DAILY_REPORT_QUERY.resx">
+      <DependentUpon>FrmCARGO_DAILY_REPORT_QUERY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_DAILY_REPORT_QUERY_OTHER.resx">
+      <DependentUpon>FrmCARGO_DAILY_REPORT_QUERY_OTHER.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_DAMAGED_List.resx">
+      <DependentUpon>FrmCARGO_DAMAGED_List.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_DAMAGED_List_ADD.resx">
+      <DependentUpon>FrmCARGO_DAMAGED_List_ADD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_DAMAGED_List_DELETE.resx">
+      <DependentUpon>FrmCARGO_DAMAGED_List_DELETE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_DAMAGED_List_DO.resx">
+      <DependentUpon>FrmCARGO_DAMAGED_List_DO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_DAMAGED_List_EDIT.resx">
+      <DependentUpon>FrmCARGO_DAMAGED_List_EDIT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_DAMAGED_List_QUERY.resx">
+      <DependentUpon>FrmCARGO_DAMAGED_List_QUERY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_Delete.resx">
+      <DependentUpon>FrmCargo_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_Edit.resx">
+      <DependentUpon>FrmCargo_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_HATCHED.resx">
+      <DependentUpon>FrmCARGO_HATCHED.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_HATCHED_do.resx">
+      <DependentUpon>FrmCARGO_HATCHED_do.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_HATCH_LIST.resx">
+      <DependentUpon>FrmCARGO_HATCH_LIST.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_hatch_list_add.resx">
+      <DependentUpon>FrmCargo_hatch_list_add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_hatch_list_delete.resx">
+      <DependentUpon>FrmCargo_hatch_list_delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_hatch_list_edit.resx">
+      <DependentUpon>FrmCargo_hatch_list_edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_hatch_list_GRID.resx">
+      <DependentUpon>FrmCargo_hatch_list_GRID.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_HATCH_LIST_new.resx">
+      <DependentUpon>FrmCARGO_HATCH_LIST_new.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_hatch_list_new_add.resx">
+      <DependentUpon>FrmCargo_hatch_list_new_add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_hatch_list_new_delete.resx">
+      <DependentUpon>FrmCargo_hatch_list_new_delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_hatch_list_new_edit.resx">
+      <DependentUpon>FrmCargo_hatch_list_new_edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_hatch_list_new_query.resx">
+      <DependentUpon>FrmCargo_hatch_list_new_query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_hatch_list_query.resx">
+      <DependentUpon>FrmCargo_hatch_list_query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_hatch_sheet.resx">
+      <DependentUpon>FrmCargo_hatch_sheet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_hatch_sheet_define.resx">
+      <DependentUpon>FrmCargo_hatch_sheet_define.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_hatch_sheet_doprint.resx">
+      <DependentUpon>FrmCargo_hatch_sheet_doprint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_hatch_sheet_EDIT.resx">
+      <DependentUpon>FrmCargo_hatch_sheet_EDIT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_hatch_sheet_QUERY.resx">
+      <DependentUpon>FrmCargo_hatch_sheet_QUERY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_MARKS_ASSORTING.resx">
+      <DependentUpon>FrmCARGO_MARKS_ASSORTING.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_MARKS_ASSORTING_ADD.resx">
+      <DependentUpon>FrmCARGO_MARKS_ASSORTING_ADD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_MARKS_ASSORTING_DELETE.resx">
+      <DependentUpon>FrmCARGO_MARKS_ASSORTING_DELETE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_MARKS_ASSORTING_DO.resx">
+      <DependentUpon>FrmCARGO_MARKS_ASSORTING_DO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_MARKS_ASSORTING_EDIT.resx">
+      <DependentUpon>FrmCARGO_MARKS_ASSORTING_EDIT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_MARKS_ASSORTING_QUERY.resx">
+      <DependentUpon>FrmCARGO_MARKS_ASSORTING_QUERY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_MEASURE_LIST.resx">
+      <DependentUpon>FrmCARGO_MEASURE_LIST.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_MEASURE_LIST_ADD.resx">
+      <DependentUpon>FrmCARGO_MEASURE_LIST_ADD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_MEASURE_LIST_DELETE.resx">
+      <DependentUpon>FrmCARGO_MEASURE_LIST_DELETE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_MEASURE_LIST_EDIT.resx">
+      <DependentUpon>FrmCARGO_MEASURE_LIST_EDIT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_MEASURE_LIST_QUERY.resx">
+      <DependentUpon>FrmCARGO_MEASURE_LIST_QUERY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_Monitor.resx">
+      <DependentUpon>FrmCARGO_Monitor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_Monitor_do.resx">
+      <DependentUpon>FrmCARGO_Monitor_do.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCARGO_MONTH.resx">
+      <DependentUpon>FRMCARGO_MONTH.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCARGO_MONTH_DO.resx">
+      <DependentUpon>FRMCARGO_MONTH_DO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_onport.resx">
+      <DependentUpon>FrmCargo_onport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_Query.resx">
+      <DependentUpon>FrmCargo_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_SHORT.resx">
+      <DependentUpon>FrmCARGO_SHORT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_SHORT_ADD.resx">
+      <DependentUpon>FrmCARGO_SHORT_ADD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_SHORT_DELETE.resx">
+      <DependentUpon>FrmCARGO_SHORT_DELETE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_SHORT_DO.resx">
+      <DependentUpon>FrmCARGO_SHORT_DO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_SHORT_EDIT.resx">
+      <DependentUpon>FrmCARGO_SHORT_EDIT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_SHORT_QUERY.resx">
+      <DependentUpon>FrmCARGO_SHORT_QUERY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCARGO_TALLY_CERTIFICATE.resx">
+      <DependentUpon>FRMCARGO_TALLY_CERTIFICATE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCARGO_TALLY_MREPORT.resx">
+      <DependentUpon>FRMCARGO_TALLY_MREPORT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_verify.resx">
+      <DependentUpon>FrmCargo_verify.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_verify2.resx">
+      <DependentUpon>FrmCargo_verify2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_verify3.resx">
+      <DependentUpon>FrmCargo_verify3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_WAITFOR.resx">
+      <DependentUpon>FrmCARGO_WAITFOR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_WAITFOR_ADD.resx">
+      <DependentUpon>FrmCARGO_WAITFOR_ADD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_WAITFOR_DELETE.resx">
+      <DependentUpon>FrmCARGO_WAITFOR_DELETE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_WAITFOR_EDIT.resx">
+      <DependentUpon>FrmCARGO_WAITFOR_EDIT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCARGO_WAITFOR_QUERY.resx">
+      <DependentUpon>FrmCARGO_WAITFOR_QUERY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheck.resx">
+      <DependentUpon>FrmCheck.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheck_Add.resx">
+      <DependentUpon>FrmCheck_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheck_Delete.resx">
+      <DependentUpon>FrmCheck_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheck_Edit.resx">
+      <DependentUpon>FrmCheck_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConRent.resx">
+      <DependentUpon>FrmConRent.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConRent_Deal.resx">
+      <DependentUpon>FrmConRent_Deal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConSealExam.resx">
+      <DependentUpon>FrmConSealExam.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConSealExam_Add.resx">
+      <DependentUpon>FrmConSealExam_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConSealExam_Delete.resx">
+      <DependentUpon>FrmConSealExam_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConSealExam_Edit.resx">
+      <DependentUpon>FrmConSealExam_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConSealExam_Query.resx">
+      <DependentUpon>FrmConSealExam_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsign.resx">
+      <DependentUpon>FrmConsign.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsign_add.resx">
+      <DependentUpon>FrmConsign_add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsign_Delete.resx">
+      <DependentUpon>FrmConsign_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsign_edit.resx">
+      <DependentUpon>FrmConsign_edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsign_Query.resx">
+      <DependentUpon>FrmConsign_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContainerBillList.resx">
+      <DependentUpon>FrmContainerBillList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContainerCargoList.resx">
+      <DependentUpon>FrmContainerCargoList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContainerSealExam.resx">
+      <DependentUpon>FrmContainerSealExam.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContainerSealExam_Add.resx">
+      <DependentUpon>FrmContainerSealExam_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContainerSealExam_Deal.resx">
+      <DependentUpon>FrmContainerSealExam_Deal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContainerSealExam_Delete.resx">
+      <DependentUpon>FrmContainerSealExam_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContainerSealExam_Edit.resx">
+      <DependentUpon>FrmContainerSealExam_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContainerSealExam_Query.resx">
+      <DependentUpon>FrmContainerSealExam_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon_Certificate_EDI.resx">
+      <DependentUpon>FrmCon_Certificate_EDI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCropEconomyStatistics.resx">
+      <DependentUpon>FrmCropEconomyStatistics.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCropEconomyStatistics_Add.resx">
+      <DependentUpon>FrmCropEconomyStatistics_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCropEconomyStatistics_Check.resx">
+      <DependentUpon>FrmCropEconomyStatistics_Check.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCropEconomyStatistics_Delete.resx">
+      <DependentUpon>FrmCropEconomyStatistics_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCropEconomyStatistics_Edit.resx">
+      <DependentUpon>FrmCropEconomyStatistics_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDAMAGE_work.resx">
+      <DependentUpon>FrmDAMAGE_work.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDAMAGE_work_ADD.resx">
+      <DependentUpon>FrmDAMAGE_work_ADD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDAMAGE_work_DELETE.resx">
+      <DependentUpon>FrmDAMAGE_work_DELETE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDAMAGE_work_EDIT.resx">
+      <DependentUpon>FrmDAMAGE_work_EDIT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDAMAGE_work_QUERY.resx">
+      <DependentUpon>FrmDAMAGE_work_QUERY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDepartMent.resx">
+      <DependentUpon>FrmDepartMent.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDepartMent_ADD.resx">
+      <DependentUpon>FrmDepartMent_ADD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDepartMent_Delete.resx">
+      <DependentUpon>FrmDepartMent_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDepartMent_Edit.resx">
+      <DependentUpon>FrmDepartMent_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDepartMent_Query.resx">
+      <DependentUpon>FrmDepartMent_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDirector.resx">
+      <DependentUpon>FrmDirector.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDirector_Add.resx">
+      <DependentUpon>FrmDirector_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDirector_Delete.resx">
+      <DependentUpon>FrmDirector_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDirector_Edit.resx">
+      <DependentUpon>FrmDirector_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDirector_Query.resx">
+      <DependentUpon>FrmDirector_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDuty.resx">
+      <DependentUpon>FrmDuty.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDuty_Add.resx">
+      <DependentUpon>FrmDuty_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDuty_Delete.resx">
+      <DependentUpon>FrmDuty_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDuty_Edit.resx">
+      <DependentUpon>FrmDuty_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDuty_Query.resx">
+      <DependentUpon>FrmDuty_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEDIINI.resx">
+      <DependentUpon>FrmEDIINI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmailName.resx">
+      <DependentUpon>FrmEmailName.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmailName_Add.resx">
+      <DependentUpon>FrmEmailName_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmailName_Delete.resx">
+      <DependentUpon>FrmEmailName_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmailName_Edit.resx">
+      <DependentUpon>FrmEmailName_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmailName_Query.resx">
+      <DependentUpon>FrmEmailName_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFax.resx">
+      <DependentUpon>FrmFax.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFax_Query.resx">
+      <DependentUpon>FrmFax_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFileView.resx">
+      <DependentUpon>FrmFileView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFind.resx">
+      <DependentUpon>FrmFind.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFinishShipStatistics.resx">
+      <DependentUpon>FrmFinishShipStatistics.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFinishShipStatistics_Deal.resx">
+      <DependentUpon>FrmFinishShipStatistics_Deal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFinishVesselStatistics.resx">
+      <DependentUpon>FrmFinishVesselStatistics.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFinishVesselStatistics_Deal.resx">
+      <DependentUpon>FrmFinishVesselStatistics_Deal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGoodsType.resx">
+      <DependentUpon>FrmGoodsType.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGoodsType_Add.resx">
+      <DependentUpon>FrmGoodsType_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGoodsType_Delete.resx">
+      <DependentUpon>FrmGoodsType_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGoodsType_Edit.resx">
+      <DependentUpon>FrmGoodsType_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGoodsType_Query.resx">
+      <DependentUpon>FrmGoodsType_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGoodsYardInfo.resx">
+      <DependentUpon>FrmGoodsYardInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGoodsYardInfo_Add.resx">
+      <DependentUpon>FrmGoodsYardInfo_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGoodsYardInfo_Delete.resx">
+      <DependentUpon>FrmGoodsYardInfo_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGoodsYardInfo_Edit.resx">
+      <DependentUpon>FrmGoodsYardInfo_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGoodsYardInfo_Query.resx">
+      <DependentUpon>FrmGoodsYardInfo_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGraph.resx">
+      <DependentUpon>FrmGraph.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGraphtest.resx">
+      <DependentUpon>FrmGraphtest.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmINVOICE_MANAGE.resx">
+      <DependentUpon>FrmINVOICE_MANAGE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmINVOICE_MANAGE_ADD.resx">
+      <DependentUpon>FrmINVOICE_MANAGE_ADD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmINVOICE_MANAGE_Delete.resx">
+      <DependentUpon>FrmINVOICE_MANAGE_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmINVOICE_MANAGE_Edit.resx">
+      <DependentUpon>FrmINVOICE_MANAGE_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmINVOICE_MANAGE_Query.resx">
+      <DependentUpon>FrmINVOICE_MANAGE_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManager.resx">
+      <DependentUpon>FrmManager.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManager_Add.resx">
+      <DependentUpon>FrmManager_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManager_Delete.resx">
+      <DependentUpon>FrmManager_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManager_Edit.resx">
+      <DependentUpon>FrmManager_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNationality.resx">
+      <DependentUpon>FrmNationality.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNationality_Add.resx">
+      <DependentUpon>FrmNationality_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNationality_Delete.resx">
+      <DependentUpon>FrmNationality_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNationality_Edit.resx">
+      <DependentUpon>FrmNationality_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNationality_Query.resx">
+      <DependentUpon>FrmNationality_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNav.resx">
+      <DependentUpon>FrmNav.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmnewgoods.resx">
+      <DependentUpon>Frmnewgoods.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmnewgoodstype.resx">
+      <DependentUpon>Frmnewgoodstype.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmnewgoodstype_Add.resx">
+      <DependentUpon>Frmnewgoodstype_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmnewgoodstype_Del.resx">
+      <DependentUpon>Frmnewgoodstype_Del.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmnewgoodstype_Edit.resx">
+      <DependentUpon>Frmnewgoodstype_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmnewgoods_Add.resx">
+      <DependentUpon>Frmnewgoods_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmnewgoods_Del.resx">
+      <DependentUpon>Frmnewgoods_Del.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmnewgoods_Edit.resx">
+      <DependentUpon>Frmnewgoods_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperationManage.resx">
+      <DependentUpon>FrmOperationManage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperationManage_Add.resx">
+      <DependentUpon>FrmOperationManage_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPack.resx">
+      <DependentUpon>FrmPack.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPack_Add.resx">
+      <DependentUpon>FrmPack_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPack_Delete.resx">
+      <DependentUpon>FrmPack_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPack_Edit.resx">
+      <DependentUpon>FrmPack_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPack_Query.resx">
+      <DependentUpon>FrmPack_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPart.resx">
+      <DependentUpon>FrmPart.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPart_Add.resx">
+      <DependentUpon>FrmPart_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPart_Del.resx">
+      <DependentUpon>FrmPart_Del.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPart_Edit.resx">
+      <DependentUpon>FrmPart_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPart_Query.resx">
+      <DependentUpon>FrmPart_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPAY_PERFORMANCE.resx">
+      <DependentUpon>FrmPAY_PERFORMANCE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPAY_PERFORMANCE_Dialog.resx">
+      <DependentUpon>FrmPAY_PERFORMANCE_Dialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPAY_PERFORMANCE_Edit.resx">
+      <DependentUpon>FrmPAY_PERFORMANCE_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPigeonhole.resx">
+      <DependentUpon>FrmPigeonhole.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPigeonhole_Edit.resx">
+      <DependentUpon>FrmPigeonhole_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPort.resx">
+      <DependentUpon>FrmPort.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPort_Add.resx">
+      <DependentUpon>FrmPort_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPort_Delete.resx">
+      <DependentUpon>FrmPort_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPort_Edit.resx">
+      <DependentUpon>FrmPort_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPort_Query.resx">
+      <DependentUpon>FrmPort_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmport_unload .resx">
+      <DependentUpon>Frmport_unload .vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPreview.resx">
+      <DependentUpon>FrmPreview.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportNew.resx">
+      <DependentUpon>FrmReportNew.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReport_cargo.resx">
+      <DependentUpon>FrmReport_cargo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReport_CON.resx">
+      <DependentUpon>FrmReport_CON.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmREPORT_TALLY_FINANCE.resx">
+      <DependentUpon>FrmREPORT_TALLY_FINANCE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmREPORT_TALLY_FINANCE_Add.resx">
+      <DependentUpon>FrmREPORT_TALLY_FINANCE_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmREPORT_TALLY_FINANCE_Delete.resx">
+      <DependentUpon>FrmREPORT_TALLY_FINANCE_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmREPORT_TALLY_FINANCE_Edit.resx">
+      <DependentUpon>FrmREPORT_TALLY_FINANCE_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmREPORT_TALLY_FINANCE_Print.resx">
+      <DependentUpon>FrmREPORT_TALLY_FINANCE_Print.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmREPORT_TALLY_QUALITY.resx">
+      <DependentUpon>FrmREPORT_TALLY_QUALITY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmREPORT_TALLY_QUALITY_ADD.resx">
+      <DependentUpon>FrmREPORT_TALLY_QUALITY_ADD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmREPORT_TALLY_QUALITY_Delete.resx">
+      <DependentUpon>FrmREPORT_TALLY_QUALITY_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmREPORT_TALLY_QUALITY_Edit.resx">
+      <DependentUpon>FrmREPORT_TALLY_QUALITY_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmREPORT_TALLY_QUALITY_Print.resx">
+      <DependentUpon>FrmREPORT_TALLY_QUALITY_Print.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRs_Salary_In.resx">
+      <DependentUpon>FrmRs_Salary_In.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSealIn.resx">
+      <DependentUpon>FrmSealIn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSealInspect.resx">
+      <DependentUpon>FrmSealInspect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSealInspect_Check.resx">
+      <DependentUpon>FrmSealInspect_Check.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSealInspect_Query.resx">
+      <DependentUpon>FrmSealInspect_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSealIn_Add.resx">
+      <DependentUpon>FrmSealIn_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSealIn_Delete.resx">
+      <DependentUpon>FrmSealIn_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSealIn_Edit.resx">
+      <DependentUpon>FrmSealIn_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSealIn_Query.resx">
+      <DependentUpon>FrmSealIn_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSealKill.resx">
+      <DependentUpon>FrmSealKill.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSealKill_Edit.resx">
+      <DependentUpon>FrmSealKill_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSealKill_Query.resx">
+      <DependentUpon>FrmSealKill_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSealOut.resx">
+      <DependentUpon>FrmSealOut.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSealOut_Add.resx">
+      <DependentUpon>FrmSealOut_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSealOut_Delete.resx">
+      <DependentUpon>FrmSealOut_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSealOut_Edit.resx">
+      <DependentUpon>FrmSealOut_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSealOut_Query.resx">
+      <DependentUpon>FrmSealOut_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSEAL_EXAM.resx">
+      <DependentUpon>FrmSEAL_EXAM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSEAL_EXAM_ADD.resx">
+      <DependentUpon>FrmSEAL_EXAM_ADD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSEAL_EXAM_DELETE.resx">
+      <DependentUpon>FrmSEAL_EXAM_DELETE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSEAL_EXAM_EDIT.resx">
+      <DependentUpon>FrmSEAL_EXAM_EDIT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSEAL_EXAM_QUERY.resx">
+      <DependentUpon>FrmSEAL_EXAM_QUERY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShipAgent.resx">
+      <DependentUpon>FrmShipAgent.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShipAgent_Add.resx">
+      <DependentUpon>FrmShipAgent_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShipAgent_Delete.resx">
+      <DependentUpon>FrmShipAgent_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShipAgent_Edit.resx">
+      <DependentUpon>FrmShipAgent_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShipAgent_Query.resx">
+      <DependentUpon>FrmShipAgent_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShipName.resx">
+      <DependentUpon>FrmShipName.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShipName_Add.resx">
+      <DependentUpon>FrmShipName_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShipName_Delete.resx">
+      <DependentUpon>FrmShipName_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShipName_Edit.resx">
+      <DependentUpon>FrmShipName_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShipName_Query.resx">
+      <DependentUpon>FrmShipName_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShipOwner.resx">
+      <DependentUpon>FrmShipOwner.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShipOwner_Add.resx">
+      <DependentUpon>FrmShipOwner_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShipOwner_Delete.resx">
+      <DependentUpon>FrmShipOwner_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShipOwner_Edit.resx">
+      <DependentUpon>FrmShipOwner_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShipOwner_Query.resx">
+      <DependentUpon>FrmShipOwner_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSort.resx">
+      <DependentUpon>FrmSort.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSpConLoadType.resx">
+      <DependentUpon>FrmSpConLoadType.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSpConPayType.resx">
+      <DependentUpon>FrmSpConPayType.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSShip.resx">
+      <DependentUpon>FrmSShip.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSShip_Add.resx">
+      <DependentUpon>FrmSShip_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSShip_Delete.resx">
+      <DependentUpon>FrmSShip_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSShip_Dept.resx">
+      <DependentUpon>FrmSShip_Dept.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSShip_Edit.resx">
+      <DependentUpon>FrmSShip_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSShip_Query.resx">
+      <DependentUpon>FrmSShip_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSTANDBY_PERFORMANCE.resx">
+      <DependentUpon>FrmSTANDBY_PERFORMANCE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSTANDBY_PERFORMANCE_Dialog.resx">
+      <DependentUpon>FrmSTANDBY_PERFORMANCE_Dialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTallyClerk.resx">
+      <DependentUpon>FrmTallyClerk.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTallyClerk_Add.resx">
+      <DependentUpon>FrmTallyClerk_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTallyClerk_Delete.resx">
+      <DependentUpon>FrmTallyClerk_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTallyClerk_Edit.resx">
+      <DependentUpon>FrmTallyClerk_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTallyClerk_Query.resx">
+      <DependentUpon>FrmTallyClerk_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTallyType.resx">
+      <DependentUpon>FrmTallyType.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTallyType_Add.resx">
+      <DependentUpon>FrmTallyType_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTallyType_Delete.resx">
+      <DependentUpon>FrmTallyType_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTallyType_Edit.resx">
+      <DependentUpon>FrmTallyType_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTallyType_Query.resx">
+      <DependentUpon>FrmTallyType_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTally_sheet.resx">
+      <DependentUpon>FrmTally_sheet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTally_sheet_add.resx">
+      <DependentUpon>FrmTally_sheet_add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTally_sheet_delete.resx">
+      <DependentUpon>FrmTally_sheet_delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTally_sheet_edit.resx">
+      <DependentUpon>FrmTally_sheet_edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTally_sheet_print.resx">
+      <DependentUpon>FrmTally_sheet_print.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTally_sheet_query.resx">
+      <DependentUpon>FrmTally_sheet_query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTally_Wage.resx">
+      <DependentUpon>FrmTally_Wage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTally_Wage_his.resx">
+      <DependentUpon>FrmTally_Wage_his.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransferYardCargo.resx">
+      <DependentUpon>FrmTransferYardCargo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransferYardCargo_Add.resx">
+      <DependentUpon>FrmTransferYardCargo_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransferYardCargo_Delete.resx">
+      <DependentUpon>FrmTransferYardCargo_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransferYardCargo_Edit.resx">
+      <DependentUpon>FrmTransferYardCargo_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransferYardCargo_Query.resx">
+      <DependentUpon>FrmTransferYardCargo_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransferYardCon.resx">
+      <DependentUpon>FrmTransferYardCon.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransferYardCon_Add.resx">
+      <DependentUpon>FrmTransferYardCon_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransferYardCon_Delete.resx">
+      <DependentUpon>FrmTransferYardCon_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransferYardCon_Edit.resx">
+      <DependentUpon>FrmTransferYardCon_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransferYardCon_Query.resx">
+      <DependentUpon>FrmTransferYardCon_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTypeShipRelation.resx">
+      <DependentUpon>FrmTypeShipRelation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTypeShipRelation_Add.resx">
+      <DependentUpon>FrmTypeShipRelation_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTypeShipRelation_Delete.resx">
+      <DependentUpon>FrmTypeShipRelation_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTypeShipRelation_Edit.resx">
+      <DependentUpon>FrmTypeShipRelation_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTypeShipRelation_Query.resx">
+      <DependentUpon>FrmTypeShipRelation_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpload.resx">
+      <DependentUpon>FrmUpload.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUser.resx">
+      <DependentUpon>FrmUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserPass.resx">
+      <DependentUpon>FrmUserPass.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUser_Add.resx">
+      <DependentUpon>FrmUser_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUser_Del.resx">
+      <DependentUpon>FrmUser_Del.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUser_Edit.resx">
+      <DependentUpon>FrmUser_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVessel_Papers.resx">
+      <DependentUpon>FrmVessel_Papers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVessel_Papers_Add.resx">
+      <DependentUpon>FrmVessel_Papers_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVessel_Papers_Delete.resx">
+      <DependentUpon>FrmVessel_Papers_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVessel_Papers_Edit.resx">
+      <DependentUpon>FrmVessel_Papers_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVessel_Papers_Query.resx">
+      <DependentUpon>FrmVessel_Papers_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWorkBegin.resx">
+      <DependentUpon>FrmWorkBegin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWorkBegin_Add.resx">
+      <DependentUpon>FrmWorkBegin_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWorkBegin_Delete.resx">
+      <DependentUpon>FrmWorkBegin_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWorkBegin_Edit.resx">
+      <DependentUpon>FrmWorkBegin_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWorkBegin_Query.resx">
+      <DependentUpon>FrmWorkBegin_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWorkTime.resx">
+      <DependentUpon>FrmWorkTime.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWorkTime_Edit.resx">
+      <DependentUpon>FrmWorkTime_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWorkType.resx">
+      <DependentUpon>FrmWorkType.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWorkType_Add.resx">
+      <DependentUpon>FrmWorkType_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWorkType_Delete.resx">
+      <DependentUpon>FrmWorkType_Delete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWorkType_Edit.resx">
+      <DependentUpon>FrmWorkType_Edit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWorkType_Query.resx">
+      <DependentUpon>FrmWorkType_Query.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWORK_RECORD.resx">
+      <DependentUpon>FrmWORK_RECORD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWORK_RECORD_ADD.resx">
+      <DependentUpon>FrmWORK_RECORD_ADD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWORK_RECORD_DELETE.resx">
+      <DependentUpon>FrmWORK_RECORD_DELETE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWORK_RECORD_EDIT.resx">
+      <DependentUpon>FrmWORK_RECORD_EDIT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWORK_RECORD_QUERY.resx">
+      <DependentUpon>FrmWORK_RECORD_QUERY.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWriteMailReport.resx">
+      <DependentUpon>FrmWriteMailReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Bonus_New.resx">
+      <DependentUpon>Frm_Bonus_New.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Bonus_New_Add.resx">
+      <DependentUpon>Frm_Bonus_New_Add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Bonus_New_Tax.resx">
+      <DependentUpon>Frm_Bonus_New_Tax.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_file_no.resx">
+      <DependentUpon>Frm_file_no.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_His.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_His.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_refresh.resx">
+      <DependentUpon>Frm_refresh.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ship_agent_sort.resx">
+      <DependentUpon>Frm_ship_agent_sort.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_single_bay_movebox.resx">
+      <DependentUpon>Frm_single_bay_movebox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_tally_fee_stat_month.resx">
+      <DependentUpon>Frm_tally_fee_stat_month.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_tally_work_stat_month.resx">
+      <DependentUpon>Frm_tally_work_stat_month.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TallyINI.resx">
+      <DependentUpon>TallyINI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Tally_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
